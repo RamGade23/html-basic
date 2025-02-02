@@ -1,37 +1,76 @@
 <!DOCTYPE html>
 <html>
 
-<!-- <head>
-    <title>My First HTML Page</title>
-</head> -->
-
 <head>
-    <style>
-        body {
-            background-color: lightblue;
+    <title>My First HTML Page</title>
+    <link rel="stylesheet" href="css/styles1.css">
+    <!-- <style>
+        p {
+            color: red;
+            font-size: 18px;
         }
 
-        p {
-            font-size: 16px;
+        /* table {
+            color: aqua;
+            background-color: black;
+            height: 200px;
+            width: 400px;
+        } */
+
+        h5 {
+            color: chartreuse;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: rgb(11, 7, 7);
+        }
+
+        div {
+            margin-left: 40%;
+            width: 400px;
+            height: 200px;
+            background-color: rgb(235, 228, 228);
+
+        }
+
+        ul {
+            margin: 50px;
+            padding-top: 50px;
+        }
+
+        ol {
+            margin: 50px;
+            padding-top: 50px;
         }
 
         table {
-            background-color: rgb(200, 174, 174);
+            width: 400px;
+            height: 150px
         }
-    </style>
+
+        form {
+            margin: 50px;
+            padding-top: 50px;
+        }
+    </style> -->
 </head>
 
 <body>
     <img src="Screenshot.png" style="max-width: 50%; height: auto;">
-    <h1 style="color: red;">This is a red heading</h1>
-    <h2>This is an H1 Heading</h2>
-    <h3>This is an H2 Heading</h3>
-    <h4>This is an H2 Heading</h4>
-    <h5>This is an H2 Heading</h5>
+    <h1 class="background-red-color">This is a red heading</h1>
+    <h2>This is an H2 Heading</h2>
+    <h3>This is an H3 Heading</h3>
+    <h4>This is an H4 Heading</h4>
+    <h5>This is an H5 Heading</h5>
     <h6>This is an H6 Heading</h6>
 
     <h1>Java Tutorial</h1>
-    <p style="color: rgb(43, 0, 255);">Our core Java programming tutorial is designed for students and working
+    <p>Our core Java programming tutorial is designed for students and working
         professionals. Java
         is an
         object-oriented, class-based, concurrent, secured and general-purpose computer-programming language. It is a
@@ -41,45 +80,53 @@
     <p>Java is a programming language and a platform. Java is a high level, robust, object-oriented and secure
         programming language.</p>
 
-    <ul>
-        <li>Apple</li>
-        <li>Banana</li>
-        <li>Cherry</li>
-        <li>pineapple</li>
-    </ul>
-    <ol>
-        <li>First</li>
-        <li>Second</li>
-        <li>Third</li>
-    </ol>
+    <div>
+        <ul>
+            <li>Apple</li>
+            <li>Banana</li>
+            <li>Cherry</li>
+            <li>pineapple</li>
+        </ul>
+    </div>
+    <br><br>
+    <div>
+        <ol>
+            <li>First</li>
+            <li>Second</li>
+            <li>Third</li>
+        </ol>
+    </div>
+    <br><br>
+    <div>
+        <table border="1">
+            <tr>
+                <th>name</th>
+                <th>age</th>
+            </tr>
+            <tr>
+                <td>Vishal</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>Rahul</td>
+                <td>26</td>
+            </tr>
+        </table>
+    </div>
+    <br><br>
+    <div>
+        <form action="/submit" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
 
-    <table border="1">
-        <tr>
-            <th>name</th>
-            <th>age</th>
-        </tr>
-        <tr>
-            <td>Vishal</td>
-            <td>25</td>
-        </tr>
-        <tr>
-            <td>Rahul</td>
-            <td>26</td>
-        </tr>
-    </table>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
 
-    <form action="/submit" method="POST">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name">
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email">
-
-        <button type="submit">Submit</button>
-    </form>
-
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <br>
     <a href="https://www.javatpoint.com/java-array-getchar-method">java array</a>
-
 </body>
 
 </html>
